@@ -1,0 +1,126 @@
+:root{
+	--preto: #141414;
+	--azul: #21c3cf;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*elementos base*/
+
+body {
+	background: var(--preto);
+	font-family: "Arial";
+	font-weight: bold;
+	color: #ffffff;
+}
+
+header .container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 15px;
+	justify-content: space-between;
+}
+
+header nav a {
+	text-decoration: none;
+	color: #aaaaaa;
+	margin-right: 25px;
+
+	transition: .5s ease all;
+}
+
+header nav a:hover{
+	color: var(--azul);
+}
+
+/*jogo principal*/
+
+.jogo-principal {
+	font-size: 13pt;
+	background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("../img/god-of-war.jpg");
+	height: 450px;
+	background-size: cover;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+
+}
+
+.jogo-principal .descricao {
+	font-weight: normal;
+	text-shadow: 2px 2px 3px black;
+	margin-top: 7px;
+	margin-bottom: 30px;
+
+}
+
+.jogo-principal .titulo {
+	margin-top: 25%;
+	font-size: 30pt;
+}
+
+.botao {
+	background-color: rgba(0,0,0,.50);
+	border: none;
+	color: #ffffff;
+	padding: 10px 25px;
+	margin-right: 10px;
+	font-size: 10pt;
+	font-weight: bold;
+
+	cursor: pointer;
+	transition: .3s ease all;
+}
+
+.botao:hover{
+	background-color: white;
+	color: black;
+}
+
+.botao i {
+	margin-right: 8px;
+}
+
+.titulo-categoria {
+	padding-top: 10px;
+	margin-left: 25px;
+	padding-bottom: 10px;
+}
+
+.container {
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+.jogo-principal .container {
+	width: 50%;
+	margin-left: 30px;
+}
+
+.box-jogos {
+	height: 150%;
+	width: 150%;
+	display: block;
+	padding-bottom: 10px;
+}
+
+.carrossel-aaa {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.nome-jogo {
+	text-align: center;
+	font-size: 11pt;
+}
+
+.carrossel-indie, .carrossel-retro {
+	margin-top: 5px;
+}
